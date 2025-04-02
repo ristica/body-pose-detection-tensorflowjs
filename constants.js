@@ -1,13 +1,11 @@
 const CANVAS = document.getElementById('canvas');
 const CTX = CANVAS.getContext('2d');
 
-const BODY_PARTS = {
-    ears_eyes_nose: [/*left ear*/7,   /*left eye LR*/3,1,2,  /*nose*/0,  /*right eye LR*/4,5,6,  /*right ear*/8],
-    mouth: [/*left*/9, /*right*/10],
-    shoulders: [/*left*/11, /*right*/12],
-    left_Arm: [/*elbow*/13, /*wrist*/15, /*index*/19, /*pinky*/17, /*thumb*/21],
-    right_arm: [/*elbow*/14, /*wrist*/16, /*index*/20, /*pinky*/18, /*thumb*/22],
-    hips: [/*left*/23, /*right*/24],
-    left_leg: [/*knee*/25, /*ankle*/27, /*heel*/29, /*foot*/31],
-    right_leg: [/*knee*/26, /*ankle*/28, /*heel*/30, /*foot*/32]
-};
+const BLAZEPOSE_CONNECTED_KEYPOINTS_PAIRS = [
+    [0, 1],   [0, 4],   [1, 2],   [2, 3],   [3, 7],   [4, 5],
+    [5, 6],   [6, 8],   [9, 10],  [11, 12], [11, 13], [11, 23],
+    [12, 14], [14, 16], [12, 24], [13, 15], [15, 17], [16, 18],
+    [16, 20], [15, 17], [15, 19], [15, 21], [16, 22], [17, 19],
+    [18, 20], [23, 25], [23, 24], [24, 26], [25, 27], [26, 28],
+    [27, 29], [28, 30], [27, 31], [28, 32], [29, 31], [30, 32]
+  ];

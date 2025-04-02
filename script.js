@@ -23,7 +23,7 @@ async function estimate(video, detector) {
     const estimationConfig = { flipHorizontal: true };
     const timestamp = performance.now();
     const poses = await detector.estimatePoses(video, estimationConfig, timestamp);
-    console.log(poses);
+    // console.log(poses);
 
     requestAnimationFrame(() => {
         drawKeypoints(poses);
