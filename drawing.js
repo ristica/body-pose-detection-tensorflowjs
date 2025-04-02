@@ -24,8 +24,8 @@ function drawSkeleton(keypoints) {
         const kp1 = keypoints[i];
         const kp2 = keypoints[j];
 
-        const score1 = kp1.score != null ? kp1.score : 1;
-        const score2 = kp2.score != null ? kp2.score : 1;
+        const score1 = kp1.score != null ? kp1.score : 0;
+        const score2 = kp2.score != null ? kp2.score : 0;
 
         if (score1 >= 0.4 && score2 >= 0.4) {
             CTX.beginPath();

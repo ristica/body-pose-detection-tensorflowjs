@@ -37,7 +37,7 @@ async function main() {
 
     setInterval(() => {
         estimate(video, detector);
-    });
+    }, 100);
 
 }
 
